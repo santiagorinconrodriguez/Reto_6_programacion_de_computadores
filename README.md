@@ -30,7 +30,7 @@ flowchart TD
     A(["Inicio"]) --> B[número = 1]
     B --> C{"¿número <= 100?"}
     C -- Sí --> D[Cuadrado = número^2]
-    D --> G[/Imprimir (número, cuadrado/)]
+    D --> G[/Imprimir número, cuadrado/]
     G --> H[número = número + 1]
     H --> C
     C -- no --> F(["Fin"])
