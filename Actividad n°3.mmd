@@ -1,0 +1,15 @@
+---
+config:
+  theme: redux
+---
+flowchart TD
+    A[Inicio] --> B[Ingresar número natural ≥ 2]
+    B --> C{¿numero ≥ 2?}
+    C -- No --> Z[Fin]
+    C -- Sí --> D{¿numero % 2 == 0?}
+    D -- Sí --> E[numero = numero -2]
+    E --> F[/imprimir 'numero'/]
+    F --> C
+    D -- No --> G[numero = numero - 1]
+    G --> H[/imprimir 'numero'/]
+    H --> C

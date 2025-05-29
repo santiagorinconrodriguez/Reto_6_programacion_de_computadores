@@ -1,0 +1,14 @@
+---
+config:
+  theme: redux
+---
+
+flowchart TD
+    A[Inicio] --> B[numero = 2]
+    B --> C{¿numero <= 1000?}
+    C -- Sí --> D{¿numero % 2 == 0?}
+    D -- Sí --> E[/Imprimir numero/]
+    D -- No --> G
+    E --> G[numero = numero + 1]
+    G --> C
+    C -- No --> H[Fin]
